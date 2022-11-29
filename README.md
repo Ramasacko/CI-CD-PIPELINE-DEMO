@@ -167,4 +167,6 @@ rpm -Uvh https://assets.nagios.com/downloads/ncpa/ncpa-latest.el6.x86_64.rpm
 # Download check_docker plugin command:
 
 wget http://54.209.36.115/nagiosxi/includes/configwizards/docker/plugins/check_docker.py
+  
+  #validating weebook implementation
 

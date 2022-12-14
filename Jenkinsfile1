@@ -1,0 +1,19 @@
+pipeline {
+      agent any
+tools{
+	maven "M2_HOME"
+     }
+stage{
+	stage('Build application')
+		steps {
+			sh 'mvn clean package'
+		       }
+	post {
+		sucess{
+			echo "Starting the archive process"
+			archiveArtifacts artifacts: '**/*.war'
+		      }
+             }
+      }
+     }
+     }

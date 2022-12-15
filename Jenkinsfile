@@ -19,14 +19,15 @@ pipeline {
         }
       
       }
-      stage ('Deploy Application'){
+      
+    
+    }
+    stage ('Deploy Application'){
         steps {
           build job: 'APPLICATION-DEPLOYMENT-JOB'
         }
       
       }
-    
-    }
   
   }
   
